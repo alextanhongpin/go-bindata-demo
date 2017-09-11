@@ -20,6 +20,7 @@ func main() {
 	if err != nil {
 		log.Println(err)
 	}
+	log.Println(string(data))
 	var people []People
 	err = json.Unmarshal(data, &people)
 	if err != nil {
