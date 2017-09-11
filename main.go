@@ -12,7 +12,7 @@ type People struct {
 	Age  int    `json:"age"`
 }
 
-//go:generate go-bindata -o asset/bindata.go data/
+//go:generate go-bindata a -pkg helper -o asset/bindata.go data/
 func main() {
 	log.Println("hello world")
 
